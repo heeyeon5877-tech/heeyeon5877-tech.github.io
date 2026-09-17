@@ -1,0 +1,14 @@
+.sheet{break-inside:avoid;page-break-inside:avoid}
+.odometry img{max-height:56mm;width:100%;min-width:0;object-fit:contain}
+.odometry{overflow:visible}
+.odometry figcaption{position:static}
+.plc-evidence img{max-height:73mm}
+.secondary-plc img{max-height:36mm}
+.car img{max-height:116mm}
+.controller img{height:43mm}
+.flow{margin:10px 0 14px}
+.flow>div{padding-top:8px;padding-bottom:8px}
+.split-copy p{font-size:9.5pt}
+.split-copy h3{font-size:13pt}
+.sheet-bottom{margin-top:12px}
+.pdf-download{display:none}
