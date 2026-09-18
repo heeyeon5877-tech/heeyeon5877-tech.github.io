@@ -1,14 +1,26 @@
-.sheet{break-inside:avoid;page-break-inside:avoid}
-.odometry img{max-height:56mm;width:100%;min-width:0;object-fit:contain}
-.odometry{overflow:visible}
-.odometry figcaption{position:static}
-.plc-evidence img{max-height:73mm}
-.secondary-plc img{max-height:36mm}
-.car img{max-height:116mm}
-.controller img{height:43mm}
-.flow{margin:10px 0 14px}
-.flow>div{padding-top:8px;padding-bottom:8px}
-.split-copy p{font-size:9.5pt}
-.split-copy h3{font-size:13pt}
-.sheet-bottom{margin-top:12px}
-.pdf-download{display:none}
+@page{size:A4 landscape;margin:10mm}
+body{font-size:9pt;line-height:1.55}
+.sheet{padding:0;break-inside:avoid;break-after:page}
+.lead-sheet{break-after:auto}.lead-sheet .profile-row{padding-bottom:7px;margin-bottom:12px}
+.sheet:last-child{break-after:auto}.site-header,footer,.skip,.overview,.pdf-download{display:none}
+h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margin-top:5px}
+.project-heading{margin-bottom:12px}.project-grid{grid-template-columns:1.15fr 1fr;gap:24px}
+.detail-list{margin-top:10px}.detail-list li{padding:7px 0}.detail-list strong{font-size:10pt;margin-bottom:3px}.detail-list span{font-size:9.5pt;line-height:1.55}
+.role-label{font-size:9pt;margin-bottom:8px}.eyebrow,.tech,.updated,.tags li,.evidence figcaption{font-size:8pt}
+.metric-strip{margin:10px 0 14px}.metric{padding:10px 18px}.metric strong{font-size:21pt}.metric span{font-size:9pt}
+.evidence img{max-height:100mm;object-fit:contain}.lead-sheet .profile-description{font-size:10pt}.profile-meta{font-size:8pt}.profile-meta svg{display:none}
+.warehouse img{max-height:83mm}.car img{max-height:130mm}.controller img{height:42mm}.plc-evidence{gap:12px}.plc-evidence img{max-height:70mm}.secondary-plc img{max-height:36mm}
+.flow{margin:10px 0 14px}.flow>div,.flow>div:first-child{padding:10px 15px}.flow span{font-size:18pt;display:inline-block}.flow strong{font-size:12pt}.flow p{font-size:9pt}
+.split-copy{gap:24px}.split-copy p{font-size:9.5pt}.odometry{margin-top:16px;overflow:visible}.odometry img{min-width:0;max-height:52mm}.odometry figcaption{position:static}
+.pipeline{margin-top:12px}.pipeline li{padding:8px 0}.pipeline strong{font-size:10pt}.pipeline p,.big-stat p{font-size:9pt}.pipeline>li>span{width:24px;height:24px}.big-stat strong{font-size:38pt}
+.note{margin-top:12px;padding:10px 14px}.note strong{font-size:10pt}.note p{font-size:9pt}
+.timing{font-size:9pt;margin:12px 0}.timing th,.timing td{padding:8px}.timing caption,.acc small{font-size:8pt}.compare{margin-top:12px;overflow:visible}.acc{min-width:0}
+.inline-facts{padding:12px 0;margin-top:10px}.inline-facts strong{font-size:18pt}.inline-facts span{font-size:8pt}
+.sensor-map{margin:12px 0}.sensor-map>div{padding:7px 0;grid-template-columns:80px 24px 1fr}.sensor-map span{font-size:9pt}
+.sheet-bottom{margin-top:12px;padding-top:8px}.scope-note{font-size:8pt;margin-top:12px}.tinted{background:white}
+.dashboard img{max-height:72mm}.compare .note{break-inside:avoid}
+.sheet[class*="project-"]{background:white;border:0;margin-top:0;padding:0}
+.project-band,.project-end:not(.project-start) .project-band{display:flex;flex-direction:row;align-items:center;background:var(--project-color);color:white;border:0;padding:6px 10px;margin-bottom:10px;gap:12px}
+.project-band strong{font-size:11pt}.project-band span{font-size:9pt}
+.project-heading h2{margin-top:0}.project-heading{margin-bottom:10px}
+.warehouse img{max-height:77mm}.dashboard img{max-height:66mm}
