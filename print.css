@@ -24,3 +24,9 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .project-band strong{font-size:11pt}.project-band span{font-size:9pt}
 .project-heading h2{margin-top:0}.project-heading{margin-bottom:10px}
 .warehouse img{max-height:77mm}.dashboard img{max-height:66mm}
+.skills-summary{margin-top:10px;padding-top:8px;border-top-width:2px;break-inside:avoid}
+.skills-heading{margin-bottom:6px;gap:10px}.skills-heading h3{font-size:10pt}
+.skills-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.skills-grid>div{padding-left:10px}
+.skills-grid dt{font-size:8pt;margin-bottom:3px}.skills-grid dd{font-size:9pt;line-height:1.5}
+.warehouse img{max-height:64mm}.car img{max-height:111mm}
+.sheet.project-start.project-end{padding-top:0}
