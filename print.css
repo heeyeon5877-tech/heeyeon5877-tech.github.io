@@ -30,3 +30,10 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .skills-grid dt{font-size:8pt;margin-bottom:3px}.skills-grid dd{font-size:9pt;line-height:1.5}
 .warehouse img{max-height:64mm}.car img{max-height:111mm}
 .sheet.project-start.project-end{padding-top:0}
+.project-amr .detail-list{margin-top:6px}.project-amr .detail-list li{padding:4px 0}.project-amr .detail-list span{font-size:9pt;line-height:1.45}
+.project-amr .metric-strip{margin:6px 0 10px}.project-amr .metric{padding:7px 16px}.project-amr .metric strong{font-size:18pt}
+.project-amr .scope-note{margin-top:8px;padding-top:6px}.project-amr .warehouse img{max-height:64mm}
+.project-amr .timing{margin:4px 0 8px}.project-amr .timing th,.project-amr .timing td{padding:6px 8px}
+.project-amr .warehouse img{max-height:58mm}.project-amr .project-copy h3{margin-bottom:2px}.project-amr .amr-side .scope-note{margin-top:6px}
+#amr .metric{padding:5px 16px}#amr .metric strong{font-size:16pt}#amr .detail-list li{padding:3px 0}#amr .role-label{margin-bottom:4px}
+.project-mid .project-band{background:var(--project-color);color:white;border:0;padding:6px 10px}
