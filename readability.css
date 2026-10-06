@@ -64,3 +64,4 @@ h2{font-size:32px}h3{font-size:23px;line-height:1.5}
 @media(prefers-reduced-motion:reduce){.overview a{transition:none}.overview a:hover{transform:none}}
 .sheet.project-mid{padding-top:32px}
 .project-mid .project-band{color:var(--project-color);background:transparent;border-bottom:2px solid var(--project-color);padding-left:0;padding-right:0}
+.amr-ops-note{font-size:13px;line-height:1.6;color:var(--muted);margin-top:10px;padding:9px 11px;background:rgba(18,97,83,.07);border-left:3px solid var(--project-color)}.amr-ops-note strong{color:var(--project-color)}.project-amr .timing small{display:block;font-size:11px;font-weight:500;color:var(--muted)}
