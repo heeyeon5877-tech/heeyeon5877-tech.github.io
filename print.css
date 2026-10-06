@@ -37,7 +37,7 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .project-amr .warehouse img{max-height:58mm}.project-amr .project-copy h3{margin-bottom:2px}.project-amr .amr-side .scope-note{margin-top:6px}
 #amr .metric{padding:5px 16px}#amr .metric strong{font-size:16pt}#amr .detail-list li{padding:3px 0}#amr .role-label{margin-bottom:4px}
 .project-mid .project-band{background:var(--project-color);color:white;border:0;padding:6px 10px}
-.amr-odom-summary{margin-top:4px}.amr-odom-summary img{height:24mm;max-height:24mm;width:100%;object-fit:contain}.amr-odom-summary figcaption{font-size:7pt;line-height:1.2;margin-top:2px}
+.amr-validation-copy .amr-odom-note{margin-top:5px;padding:4px 8px}.amr-validation-copy .amr-odom-note strong{font-size:8.5pt}.amr-validation-copy .amr-odom-note p{font-size:7.5pt;line-height:1.35;margin-top:2px}.amr-validation-copy .amr-odom-summary{margin-top:4px}.amr-validation-copy .amr-odom-summary img{height:auto;max-height:44mm;width:100%;object-fit:contain}.amr-validation-copy .amr-odom-summary figcaption{font-size:7pt;line-height:1.2;margin-top:2px}
 #amr .warehouse img{max-height:48mm}#amr .flow>div{padding:6px 15px}#amr .flow{margin:6px 0 8px}
 .project-amr.project-end .project-heading{margin-bottom:6px}.project-amr.project-end .note{margin-top:6px;padding:5px 12px}.project-amr.project-end .sheet-bottom{margin-top:4px;padding-top:3px}
 .project-amr .amr-ops-note{font-size:7.5pt;line-height:1.4;margin-top:5px;padding:5px 7px}.project-amr .timing small{font-size:7pt}
