@@ -39,6 +39,20 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .project-mid .project-band{background:var(--project-color);color:white;border:0;padding:6px 10px}
 .amr-validation-copy .amr-odom-note{margin-top:5px;padding:4px 8px}.amr-validation-copy .amr-odom-note strong{font-size:8.5pt}.amr-validation-copy .amr-odom-note p{font-size:7.5pt;line-height:1.35;margin-top:2px}.amr-validation-copy .amr-odom-summary{margin-top:4px}.amr-validation-copy .amr-odom-summary img{height:auto;max-height:44mm;width:100%;object-fit:contain}.amr-validation-copy .amr-odom-summary figcaption{font-size:7pt;line-height:1.2;margin-top:2px}
 #amr .warehouse img{max-height:48mm}#amr .flow>div{padding:6px 15px}#amr .flow{margin:6px 0 8px}
-.project-amr.project-end .project-heading{margin-bottom:6px}.project-amr.project-end .note{margin-top:6px;padding:5px 12px}.project-amr.project-end .sheet-bottom{margin-top:6px;padding:5px 0 3px;position:relative;bottom:2mm}.project-amr.project-end .sheet-bottom .tech,.project-amr.project-end .sheet-bottom .updated{line-height:1.8;padding-bottom:2px}
+.project-amr.project-end .project-heading{margin-bottom:6px}.project-amr.project-end .note{margin-top:6px;padding:5px 12px}.project-amr.project-end .sheet-bottom{margin-top:6px;padding:5px 0 3px}.project-amr.project-end .sheet-bottom .tech,.project-amr.project-end .sheet-bottom .updated{line-height:1.65;padding-bottom:2px}
 .project-amr .amr-ops-note{font-size:7.5pt;line-height:1.4;margin-top:5px;padding:5px 7px}.project-amr .timing small{font-size:7pt}
-.project-ai.project-start .skills-summary{position:relative;bottom:2mm;padding-bottom:3px}.project-ai.project-start .skills-grid dd{line-height:1.75;padding-bottom:2px}
+.project-ai.project-start .skills-summary{padding-bottom:3px}.project-ai.project-start .skills-grid dd{line-height:1.6;padding-bottom:2px}
+
+/* Keep the final gray metadata inside the printable area on every page. */
+.project-heading{margin-bottom:8px}
+.metric-strip{margin-top:7px;margin-bottom:10px}
+.detail-list{margin-top:7px}.detail-list li{padding-top:5px;padding-bottom:5px}
+.flow{margin-top:7px;margin-bottom:10px}
+.note{margin-top:8px;padding-top:7px;padding-bottom:7px}
+.timing{margin-top:8px;margin-bottom:8px}
+.inline-facts{margin-top:7px;padding-top:8px;padding-bottom:8px}
+.sensor-map{margin-top:8px;margin-bottom:8px}
+.skills-summary,.sheet-bottom{position:relative;bottom:3mm}
+.skills-summary{margin-top:6px;padding-top:6px;padding-bottom:3px}
+.sheet-bottom{margin-top:8px;padding-top:6px;padding-bottom:3px}
+.sheet-bottom .tech,.sheet-bottom .updated,.skills-grid dd{line-height:1.6;padding-bottom:2px}
