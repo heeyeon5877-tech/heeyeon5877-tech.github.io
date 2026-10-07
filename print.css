@@ -56,3 +56,5 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .skills-summary{margin-top:6px;padding-top:6px;padding-bottom:3px}
 .sheet-bottom{margin-top:8px;padding-top:6px;padding-bottom:3px}
 .sheet-bottom .tech,.sheet-bottom .updated,.skills-grid dd{line-height:1.6;padding-bottom:2px}
+.project-ai.project-end .sheet-bottom{position:static;margin-top:7px;padding-top:6px;padding-bottom:5px}
+.project-ai.project-end .sheet-bottom .tech,.project-ai.project-end .sheet-bottom .updated{line-height:1.7}
