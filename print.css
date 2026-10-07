@@ -52,9 +52,19 @@ h2{font-size:19pt}h3{font-size:12pt;line-height:1.4}.intro{font-size:9.5pt;margi
 .timing{margin-top:8px;margin-bottom:8px}
 .inline-facts{margin-top:7px;padding-top:8px;padding-bottom:8px}
 .sensor-map{margin-top:8px;margin-bottom:8px}
-.skills-summary,.sheet-bottom{position:relative;bottom:3mm}
+.skills-summary,.sheet-bottom{position:static}
 .skills-summary{margin-top:6px;padding-top:6px;padding-bottom:3px}
 .sheet-bottom{margin-top:8px;padding-top:6px;padding-bottom:3px}
 .sheet-bottom .tech,.sheet-bottom .updated,.skills-grid dd{line-height:1.6;padding-bottom:2px}
 .project-ai.project-end .sheet-bottom{position:static;margin-top:7px;padding-top:6px;padding-bottom:5px}
 .project-ai.project-end .sheet-bottom .tech,.project-ai.project-end .sheet-bottom .updated{line-height:1.7}
+.project-ai.project-end .intro,.project-ai.project-end .detail-list span{line-height:1.65;padding-bottom:2px;overflow:visible}
+.project-ai.project-end .evidence figcaption,.project-ai.project-end .timing caption{line-height:1.65;padding-bottom:3px;overflow:visible}
+.project-ai.project-end .note p{line-height:1.7;padding-bottom:3px;overflow:visible}
+.project-ai.project-end .project-band{margin-bottom:8px}
+.project-ai.project-end .project-heading{margin-bottom:5px}
+.project-ai.project-end .dashboard img{max-height:60mm}
+.project-ai.project-end .detail-list{margin-top:4px}
+.project-ai.project-end .detail-list li{padding-top:2px;padding-bottom:2px}
+.project-ai.project-end .timing th,.project-ai.project-end .timing td{padding:5px 8px}
+.project-ai.project-end .note{margin-top:4px;padding:4px 12px}
