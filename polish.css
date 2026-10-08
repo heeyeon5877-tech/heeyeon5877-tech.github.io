@@ -1,0 +1,241 @@
+/* 2026.10 polish: project-colored accents, consistent page rhythm */
+.project-amr{--project-tint:#e6f0ec}
+.project-ai{--project-tint:#e7eef8}
+.project-stm32{--project-tint:#f5e8ec}
+.project-plc{--project-tint:#ece9f2}
+
+/* accents follow each project's color */
+.sheet[class*="project-"] .role-label{color:var(--project-color);border-left-color:var(--project-color)}
+.sheet[class*="project-"] .note{background:var(--project-tint);border-left-color:var(--project-color)}
+.sheet[class*="project-"] .note strong{color:var(--project-color)}
+.sheet[class*="project-"] .timing thead{background:var(--project-tint);color:var(--project-color)}
+.sheet[class*="project-"] .acc td.win{background:var(--project-tint);color:var(--project-color)}
+.sheet[class*="project-"] .inline-facts strong,
+.sheet[class*="project-"] .big-stat strong,
+.sheet[class*="project-"] .metric strong{color:var(--project-color)}
+.sheet[class*="project-"] .pipeline>li>span{background:var(--project-color)}
+.sheet[class*="project-"] .source-link{color:var(--project-color)}
+.sheet[class*="project-"] .scope-note strong,.sheet[class*="project-"] .tech strong{color:var(--project-color)}
+.timing b.mine,.timing caption b.mine{color:var(--project-color);font-weight:700}
+
+/* screenshots without gray letterbox */
+.evidence img,.warehouse img{width:auto;max-width:100%;margin:0 auto;background:transparent;border:1px solid var(--line);border-radius:4px}
+.odometry img,.amr-odom-summary img{border:0}
+
+/* Safe Eye data facts */
+.data-facts{margin-top:0;padding-top:0;border-top:0;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.data-facts strong{white-space:nowrap}
+
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  .sheet{height:190mm;display:flex;flex-direction:column;overflow:hidden}
+  .lead-sheet{height:auto;display:block}
+  .lead-sheet .profile-row{margin-bottom:8px}
+  #amr{height:159mm}
+  .sheet .skills-summary,.sheet .sheet-bottom{margin-top:auto !important}
+  .project-ai.project-start .pipeline li{padding:10px 0}
+  .project-grid{flex:none}
+  .evidence img{border-width:.6pt}
+  .data-facts{padding-bottom:8px}.data-facts strong{font-size:17pt}
+  .project-ai.project-start .pipeline{margin-top:6px}
+  .project-amr .metric strong{font-size:17pt}
+  .amr-validation-copy .amr-odom-summary img{max-height:none;width:100%}
+  .project-stm32.project-end .controller img{height:58mm}
+  .project-stm32.project-start .car img{max-height:118mm}
+  .project-plc .plc-evidence img{max-height:74mm}.project-plc .secondary-plc img{max-height:44mm}
+  .project-ai.project-end .dashboard img{max-height:66mm}
+  #amr .warehouse img{max-height:62mm}
+  .scope-note{line-height:1.5}
+}
+.odom-wide{margin-top:18px;text-align:center}.odom-wide img{width:100%;height:auto;max-height:none}.odom-wide figcaption{text-align:center}
+@media print{.odom-wide{margin-top:6px}.odom-wide img{width:auto;max-width:100%;max-height:50mm}.project-amr.project-end .timing th,.project-amr.project-end .timing td{padding:4px 8px}.project-amr.project-end .project-grid{gap:24px}}
+/* one-page Safe Eye / RC car */
+.ai-side{display:flex;flex-direction:column;gap:16px;min-width:0}
+.project-grid.rc-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,.75fr)}
+.rc-grid .timing{margin-top:6px}
+@media screen and (max-width:900px){.project-grid.rc-grid{grid-template-columns:1fr}}
+@media print{
+  #ai .detail-list li,#stm32 .detail-list li{padding:4px 0}
+  #ai .detail-list span,#stm32 .detail-list span{font-size:9pt;line-height:1.5}
+  #ai .detail-list strong,#stm32 .detail-list strong{font-size:9.5pt}
+  #ai .ai-side{gap:6px}#ai .dashboard img{max-height:45mm}#ai .project-heading{margin-bottom:4px}
+  #ai .compare{margin-top:6px}#ai .acc small{display:inline;margin-left:4px}#ai .timing caption{padding-bottom:3px}#ai .project-band{margin-bottom:6px}#ai .timing th,#ai .timing td{padding:4px 8px}
+  #ai .note{margin-top:5px;padding:5px 12px}
+  .project-grid.rc-grid{gap:18px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,.75fr)}#stm32 .car img{max-height:125mm}#stm32 .inline-facts{margin-top:10px}
+  #stm32 .timing th,#stm32 .timing td{padding:5px 6px}#stm32 .body-copy{font-size:9pt}
+  #stm32 .note{margin-top:8px}
+}
+/* AMR 2/2 print spacing: spread content over the page */
+@media print{
+  .sheet.project-amr.project-end .project-band{margin-bottom:12px}
+  .sheet.project-amr.project-end .project-heading{margin-bottom:10px}
+  .sheet.project-amr.project-end .metric-strip{margin:8px 0 18px}
+  .sheet.project-amr.project-end .metric{padding:10px 18px}
+  .sheet.project-amr.project-end .metric:first-child{padding-left:0}
+  .sheet.project-amr.project-end .project-grid{gap:30px}
+  .sheet.project-amr.project-end .role-label{margin-bottom:8px}
+  .sheet.project-amr.project-end h3{margin-bottom:6px}
+  .sheet.project-amr.project-end .detail-list li{padding:8px 0}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-note{margin-top:12px;padding:8px 12px}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-note p{font-size:8pt;line-height:1.55;margin-top:4px}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-summary{margin-top:12px}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-summary figcaption{margin-top:6px}
+  .sheet.project-amr.project-end .timing caption{padding-bottom:8px}
+  .sheet.project-amr.project-end .timing th,.sheet.project-amr.project-end .timing td{padding:9px 10px}
+  .sheet.project-amr.project-end .note{margin-top:16px;padding:10px 14px}
+  .sheet.project-amr.project-end .note p{line-height:1.65}
+}
+/* AMR field-run table */
+.project-grid.amr-field-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr)}
+.field-runs td small,.field-runs th small{display:block;font-size:.78em;font-weight:400;color:var(--muted)}
+.field-runs td b{color:var(--project-color)}
+.field-runs td.rm{font-size:.88em;color:var(--muted)}
+@media print{
+  .sheet.project-amr.project-end .field-runs th,.sheet.project-amr.project-end .field-runs td{padding:5px 7px;font-size:8.5pt;line-height:1.4}
+  .sheet.project-amr.project-end .field-runs td.rm{font-size:7.8pt}
+  .sheet.project-amr.project-end .field-runs small{font-size:7pt}
+  .sheet.project-amr.project-end .note{margin-top:10px}
+}
+@media screen and (max-width:900px){.project-grid.amr-field-grid{grid-template-columns:1fr}}
+.amr-odom-note .odom-team{margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);font-size:.92em}
+@media print{.sheet.project-amr.project-end .amr-validation-copy .amr-odom-note .odom-team{font-size:7.4pt;margin-top:3px;padding-top:3px}}
+@media print{
+  .sheet.project-amr.project-end .amr-odom-note{margin-top:8px !important;padding:7px 12px !important}
+  .sheet.project-amr.project-end .amr-odom-note strong{font-size:8.5pt}
+  .sheet.project-amr.project-end .amr-odom-note p{font-size:7.8pt;line-height:1.5;margin-top:3px}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-summary{margin-top:14px}
+}
+@media print{
+  .sheet.project-amr.project-end .metric-strip{margin:6px 0 12px}
+  .sheet.project-amr.project-end .metric{padding:6px 18px}
+  .sheet.project-amr.project-end .field-runs th,.sheet.project-amr.project-end .field-runs td{padding:3px 7px;line-height:1.35}
+  .sheet.project-amr.project-end .note{margin-top:8px;padding:7px 12px}
+  .sheet.project-amr.project-end .note p{line-height:1.5}
+}
+@media print{.sheet.project-amr.project-end .field-runs th,.sheet.project-amr.project-end .field-runs td{padding:2px 7px}}
+@media print{#ai .dashboard img{max-height:55mm}}
+.field-runs thead th,.field-runs td:not(.rm){white-space:nowrap}
+/* visible in-progress badge on AMR band */
+.project-band strong{display:inline-flex;align-items:center;gap:10px}
+.project-band .band-status{margin-left:0;background:#ffd36b;color:#3d2a00;border:0;border-radius:4px;font-weight:700;font-size:12px;line-height:20px;padding:0 9px;letter-spacing:.02em}
+.project-end:not(.project-start) .project-band .band-status{color:#3d2a00}
+@media print{.project-band .band-status{font-size:8pt;line-height:14pt;padding:0 6px}}
+/* mobile: data tables become stacked cards */
+@media screen and (max-width:760px){
+  .field-runs,.acc{min-width:0 !important;width:100%}
+  .compare{overflow-x:visible}
+  .field-runs thead,.acc thead{display:none}
+  .field-runs tbody,.acc tbody,.field-runs tr,.acc tr{display:block}
+  .field-runs tr,.acc tr{border:1px solid var(--line);border-left:4px solid var(--project-color);border-radius:6px;margin:0 0 10px;padding:8px 12px;background:#fff}
+  .timing.field-runs tbody tr:nth-child(even),.timing.acc tbody tr:nth-child(even){background:#fff}
+  .field-runs th,.field-runs td,.acc th,.acc td{display:flex;justify-content:space-between;gap:12px;padding:5px 0 !important;border:0;border-bottom:1px dashed var(--line);white-space:normal !important;text-align:right;font-size:14px}
+  .field-runs tr>*:last-child,.acc tr>*:last-child{border-bottom:0}
+  .field-runs th[scope=row],.acc th[scope=row]{display:block;text-align:left;font-size:16px;color:var(--project-color);border-bottom:1px solid var(--line);padding-bottom:6px !important}
+  .field-runs th[scope=row]::before,.acc th[scope=row]::before{content:none}
+  .field-runs td::before,.acc td::before{content:attr(data-label);color:var(--muted);font-weight:600;text-align:left;flex:none}
+  .field-runs td small{display:inline;margin-left:6px}
+  .field-runs td.rm{display:block;text-align:left;font-size:13px}
+  .field-runs td.rm::before{display:block;margin-bottom:2px}
+  .field-runs td.rm:empty{display:none}
+  .acc small{display:inline;margin-left:6px}
+  .acc td.win{background:var(--project-tint)}
+}
+@media screen and (max-width:760px){
+  .field-runs td,.acc td{justify-content:flex-start;align-items:baseline}
+  .field-runs td::before,.acc td::before{margin-right:auto}
+}
+
+/* ==========================================================
+   CLEAN THEME (2026-10-08): restrained, editorial look
+   - ink + one muted accent per project, used sparingly
+   - no tinted boxes, no solid color bands, thin rules only
+   ========================================================== */
+:root{--ink:#1c1f1e;--muted:#5b6461;--line:#dfe3e1;--rule:#1c1f1e}
+.project-amr{--project-color:#2f5d52}
+.project-ai{--project-color:#34558a}
+.project-stm32{--project-color:#7e3b4c}
+.project-plc{--project-color:#544c63}
+body .sheet[class*="project-"]{background:#fff}
+body .sheet.project-start{border-top:0}
+body .sheet.project-end{border-bottom:0}
+
+/* project header: thin rule + small label instead of a colored bar */
+body .project-band,body .project-end:not(.project-start) .project-band,body .project-mid .project-band{
+  background:transparent!important;color:var(--ink)!important;border:0;border-top:1.5px solid var(--rule);border-bottom:0;
+  padding:8px 0 0!important;margin-bottom:14px}
+body .project-band strong{font-size:13px;font-weight:700;color:var(--project-color);letter-spacing:.01em}
+body .project-band span{font-size:12px;color:var(--muted);font-weight:400}
+
+/* in-progress badge: outlined, still easy to see */
+body .project-band .band-status{background:#fff;color:#8a5a00;border:1px solid #d9a441;border-radius:3px;font-size:11px;font-weight:700;line-height:18px;padding:0 7px}
+body .project-band .band-status::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#d9a441;margin-right:5px;vertical-align:1px}
+
+/* headings */
+body h2{font-weight:700;letter-spacing:-.01em}
+body .intro{color:var(--muted)}
+
+/* labels: plain small text, no colored side bar */
+body .role-label,body .sheet[class*="project-"] .role-label{border-left:0;padding-left:0;color:var(--muted);font-weight:600;letter-spacing:.02em}
+
+/* metrics / facts: ink numbers, hairline separators */
+body .sheet[class*="project-"] .metric strong,body .sheet[class*="project-"] .inline-facts strong,body .sheet[class*="project-"] .big-stat strong{color:var(--ink);font-weight:700}
+body .metric-strip{border-block:1px solid var(--line)}
+
+/* notes: no tint, just a top hairline and a small heading */
+body .note,body .sheet[class*="project-"] .note{background:transparent;border-left:0;border-top:1px solid var(--line);padding:10px 0 0}
+body .sheet[class*="project-"] .note strong{color:var(--ink)}
+body .amr-odom-note .odom-team{border-top:1px dotted var(--line)}
+
+/* tables: header rule only, no fills, no zebra */
+body .timing thead,body .sheet[class*="project-"] .timing thead{background:transparent;color:var(--muted)}
+body .timing thead th{font-weight:600;border-bottom:1px solid var(--rule)}
+body .timing tbody tr:nth-child(even){background:transparent}
+body .sheet[class*="project-"] .acc td.win{background:transparent;color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--project-color);text-decoration-thickness:2px;text-underline-offset:4px}
+body .field-runs td b{color:var(--ink)}
+body .timing b.mine{color:var(--ink);text-decoration:underline;text-decoration-color:var(--project-color);text-decoration-thickness:1.5px;text-underline-offset:3px}
+
+/* flow strip: plain numbered row */
+body .flow{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body .flow>div,body .flow>div:first-child{border-right:1px solid var(--line)}
+body .flow>div:last-child{border-right:0}
+body .flow>div:not(:last-child):after{content:none}
+body .flow span{color:var(--muted);font-weight:600;font-size:13px}
+
+/* skills block */
+body .skills-summary{border-top:1px solid var(--rule)}
+body .skills-heading h3,body .skills-grid dt{color:var(--ink)}
+body .skills-grid>div{border-left:1px solid var(--line)}
+body .sheet[class*="project-"] .source-link{color:var(--muted)}
+
+/* images: hairline frame, no radius */
+body .evidence img,body .warehouse img{border:1px solid var(--line);border-radius:0}
+
+/* web overview cards: quieter */
+body .overview a{border-radius:4px;transition:border-color .15s}
+body .overview a:hover{transform:none}
+body .overview img{background:#f4f5f4}
+body .ov-kicker{color:var(--muted)}
+body .monogram{background:var(--ink)}
+body .site-header nav a{border-top:0}
+
+/* mobile cards: neutral */
+@media screen and (max-width:760px){
+  body .field-runs tr,body .acc tr{border-left:1px solid var(--line);border-radius:4px}
+  body .field-runs th[scope=row],body .acc th[scope=row]{color:var(--ink)}
+  body .acc td.win{background:transparent}
+}
+
+@media print{
+  body .project-band,body .project-end:not(.project-start) .project-band{padding:2mm 0 0!important;margin-bottom:3mm!important;border-top-width:1pt}
+  body .project-band strong{font-size:10.5pt}
+  body .project-band span{font-size:8pt}
+  body .project-band .band-status{font-size:7.5pt;line-height:12pt;padding:0 5px}
+  body .note,body .sheet[class*="project-"] .note,body .sheet.project-amr.project-end .note,body .sheet.project-amr.project-end .amr-odom-note{padding:2mm 0 0!important;background:transparent!important}
+  body .evidence img{border-width:.5pt}
+}
+body .profile-row{border-bottom:0}
+@media print{body .lead-sheet .profile-row{padding-bottom:4mm;margin-bottom:2mm}}
+body .ov-kicker .status{background:#fff;color:#8a5a00;border:1px solid #d9a441;border-radius:3px;font-weight:700}
+body .pdf-download{border-color:var(--ink);color:var(--ink);border-radius:4px}
+body .pdf-download:hover{background:var(--ink);color:#fff}
+body .contact-link svg{color:var(--muted)}
