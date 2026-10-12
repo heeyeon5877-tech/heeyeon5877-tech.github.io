@@ -239,3 +239,57 @@ body .ov-kicker .status{background:#fff;color:#8a5a00;border:1px solid #d9a441;b
 body .pdf-download{border-color:var(--ink);color:var(--ink);border-radius:4px}
 body .pdf-download:hover{background:var(--ink);color:#fff}
 body .contact-link svg{color:var(--muted)}
+
+/* 2026-10-11: 페이지 하단 잘림 방지 — 시트 높이를 인쇄 영역(190mm)보다 4mm 작게 */
+@media print{
+  .sheet:not(.lead-sheet){height:186mm!important}
+  #amr{height:155mm!important}
+  .sheet .skills-summary{padding-bottom:1mm}
+  #amr .amr-side .warehouse img{max-height:57mm!important;width:auto!important;margin:0 auto;display:block}
+  .project-plc .plc-evidence .evidence:not(.secondary-plc) img{max-height:69mm!important;width:auto!important}
+  .project-plc .plc-evidence .secondary-plc img{max-height:40mm!important;width:auto!important}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-summary{margin-top:6px!important}
+  .sheet.project-amr.project-end .amr-validation-copy .amr-odom-summary img{width:auto!important;max-width:100%!important;max-height:34mm!important;display:block;margin:0 auto}
+}
+/* AMR 3/3: 로봇×노드 결과 표 */
+.round2-runs td,.round2-runs th{text-align:center}
+.round2-runs th[scope=row]{text-align:left}
+.amr-round2 .note + .note{margin-top:10px}
+.round2-trim{font-size:8pt}
+@media print{.amr-round2 .round2-trim td,.amr-round2 .round2-trim th{padding:4px 6px}.amr-round2 .round2-runs{margin:6px 0 10px}}
+@media print{.sheet.amr-round2 .round2-runs td,.sheet.amr-round2 .round2-runs th{padding:3px 6px!important}}
+/* AMR 2/2 통합 페이지 */
+@media print{
+  .sheet.amr-merged .merged-runs td,.sheet.amr-merged .merged-runs th{padding:4px 6px!important}
+  .sheet.amr-merged .merged-runs{margin:4px 0 8px}
+  .sheet.amr-merged .note p{font-size:8pt;line-height:1.5}
+  .sheet.amr-merged .note + .note{margin-top:8px}
+}
+.merged-runs td:nth-child(2),.merged-runs td:nth-child(3),.merged-runs td:nth-child(4){text-align:center;white-space:nowrap}
+/* 2026-10-11 잘림 재수정: 실제 인쇄 폭(277mm) 기준으로 여유 확보 */
+@media print{
+  .project-ai .evidence.dashboard img{max-height:46mm!important;width:auto!important;margin:0 auto;display:block}
+  .sheet.amr-merged .detail-list li{padding-top:4px!important;padding-bottom:4px!important}
+  .sheet.amr-merged .note p{line-height:1.45}
+}
+@media print{
+  .sheet.amr-merged .merged-runs td,.sheet.amr-merged .merged-runs th{padding:3px 6px!important}
+  .sheet.amr-merged .note{margin-top:6px!important}
+  .sheet.amr-merged .note p{font-size:7.8pt!important}
+}
+@media print{
+  body .sheet.project-ai.project-end .note p{line-height:1.5!important}
+  body .sheet.project-ai.project-end .detail-list span{line-height:1.45!important}
+  body .sheet.project-ai.project-end .evidence figcaption{line-height:1.5!important}
+  body .sheet.project-ai.project-end .detail-list li{padding-top:3px!important;padding-bottom:3px!important}
+}
+@media print{
+  body .sheet.project-ai.project-end .compare .timing td,body .sheet.project-ai.project-end .compare .timing th{padding-top:3px!important;padding-bottom:3px!important}
+  body .sheet.project-ai.project-end .detail-list li{padding-top:2px!important;padding-bottom:2px!important}
+}
+
+/* 2026-10-12: PDF 글자 잘림 방지 — 인쇄 시 TrueType 변환 글꼴 사용 (Type 3 글꼴 임베드 방지) */
+@font-face{font-family:'PortfolioKR';src:url('fonts/PortfolioKR-Regular.ttf') format('truetype');font-weight:100 500;font-style:normal}
+@font-face{font-family:'PortfolioKR';src:url('fonts/PortfolioKR-Bold.ttf') format('truetype');font-weight:600 900;font-style:normal}
+@media print{html body,html body *{font-family:'PortfolioKR',sans-serif!important}}
+@media print{#amr .amr-side .warehouse img{max-height:52mm!important}}
